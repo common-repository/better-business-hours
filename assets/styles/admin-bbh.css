@@ -1,0 +1,145 @@
+/* Availability Table ------------------------ */
+/* line 5, ../sass/admin-bbh.scss */
+table.availability {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  max-width: 42rem;
+  width: 100%; }
+  /* line 12, ../sass/admin-bbh.scss */
+  table.availability th,
+  table.availability td {
+    border: none;
+    display: table-cell;
+    padding: 0.25rem;
+    vertical-align: middle;
+    white-space: nowrap; }
+  /* line 20, ../sass/admin-bbh.scss */
+  table.availability thead {
+    border-bottom: 1px solid #d0d0d0; }
+    /* line 22, ../sass/admin-bbh.scss */
+    table.availability thead th {
+      text-align: center;
+      width: 12%; }
+      /* line 25, ../sass/admin-bbh.scss */
+      table.availability thead th:first-of-type {
+        width: 16%; }
+  /* line 30, ../sass/admin-bbh.scss */
+  table.availability > thead > tr {
+    border-bottom: 1px solid #d0d0d0; }
+  /* line 33, ../sass/admin-bbh.scss */
+  table.availability > tbody > tr {
+    border-bottom: 1px solid #d0d0d0; }
+    /* line 35, ../sass/admin-bbh.scss */
+    table.availability > tbody > tr:nth-child(odd) {
+      border-bottom-style: dashed; }
+  /* line 39, ../sass/admin-bbh.scss */
+  table.availability td {
+    background: white;
+    border-left: 1px solid #d0d0d0;
+    cursor: url(../images/pencil.png), cell; }
+    /* line 43, ../sass/admin-bbh.scss */
+    table.availability td.selected {
+      background: #8BC34A;
+      cursor: url(../images/eraser.png), not-allowed; }
+    /* line 47, ../sass/admin-bbh.scss */
+    table.availability td.highlight {
+      background: pink; }
+  /* line 51, ../sass/admin-bbh.scss */
+  table.availability.erasing td {
+    cursor: url(../images/eraser.png), not-allowed !important; }
+  /* line 54, ../sass/admin-bbh.scss */
+  table.availability.drawing td.selected {
+    cursor: url(../images/pencil.png), cell !important; }
+
+/* Animation --------------------------------- */
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(-359deg);
+    transform: rotate(-359deg); } }
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg); } }
+@keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(-359deg);
+    -ms-transform: rotate(-359deg);
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg); } }
+/* Messaging --------------------------------- */
+/* line 72, ../sass/admin-bbh.scss */
+.message {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: normal !important;
+  line-height: 1;
+  padding: 0 0.5rem; }
+  /* line 78, ../sass/admin-bbh.scss */
+  .message .dashicons {
+    font-size: 0.75rem;
+    height: auto;
+    margin-right: 0.1rem;
+    vertical-align: baseline;
+    width: auto; }
+  /* line 85, ../sass/admin-bbh.scss */
+  .message.pending .dashicons {
+    -moz-animation-name: spin;
+    -webkit-animation-name: spin;
+    animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear; }
+
+/* Settings ---------------------------------- */
+/* line 95, ../sass/admin-bbh.scss */
+#setting-section-head {
+  cursor: pointer; }
+
+/* line 99, ../sass/admin-bbh.scss */
+.bbh-settings {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 104, ../sass/admin-bbh.scss */
+dl.bbh-setting {
+  margin: 0;
+  padding: 0.5rem 2rem 1rem 0; }
+  /* line 107, ../sass/admin-bbh.scss */
+  dl.bbh-setting dt {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem; }
+  /* line 113, ../sass/admin-bbh.scss */
+  dl.bbh-setting dd {
+    margin: 0; }
+  /* line 116, ../sass/admin-bbh.scss */
+  dl.bbh-setting select {
+    display: none; }
+  /* line 119, ../sass/admin-bbh.scss */
+  dl.bbh-setting a {
+    font-size: 0.7rem; }
+  /* line 122, ../sass/admin-bbh.scss */
+  dl.bbh-setting .bbh-display-value {
+    font-size: 1.1rem; }

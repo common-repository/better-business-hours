@@ -1,0 +1,45 @@
+@import 'compass';
+
+.better-business-hours,
+.entry-content .better-business-hours {
+	* {
+		border: 0;
+		font-weight: normal;
+		line-height: normal;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	ol.better-business-hours-listing {
+		display: table;
+		margin: 0 0 1em 0;
+		table-layout: fixed;
+		li {
+			display: table-row;
+			.better-business-hours-listing-day,
+			.better-business-hours-listing-time-blocks {
+				display: table-cell;
+				padding: 0.25em 0;
+			}
+			.better-business-hours-listing-day {
+				font-weight: bold;
+				padding-right: 1em;
+			}
+		}
+		.better-business-hours-listing-time-block {
+			display: block;
+			margin-bottom: 0.25em;
+		}
+	}
+	.better-business-hours-is-open {
+		margin-bottom: 0.5em;
+		strong {
+			font-weight: bold;
+		}
+	}
+	.better-business-hours-timezone-info {
+		font-size: 0.8em;
+		line-height: 1.4;
+		margin-bottom: 0.5em;
+	}
+}

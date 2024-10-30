@@ -1,0 +1,50 @@
+/* line 5, ../sass/bbh.scss */
+.better-business-hours *,
+.entry-content .better-business-hours * {
+  border: 0;
+  font-weight: normal;
+  line-height: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+/* line 13, ../sass/bbh.scss */
+.better-business-hours ol.better-business-hours-listing,
+.entry-content .better-business-hours ol.better-business-hours-listing {
+  display: table;
+  margin: 0 0 1em 0;
+  table-layout: fixed; }
+  /* line 17, ../sass/bbh.scss */
+  .better-business-hours ol.better-business-hours-listing li,
+  .entry-content .better-business-hours ol.better-business-hours-listing li {
+    display: table-row; }
+    /* line 19, ../sass/bbh.scss */
+    .better-business-hours ol.better-business-hours-listing li .better-business-hours-listing-day,
+    .better-business-hours ol.better-business-hours-listing li .better-business-hours-listing-time-blocks,
+    .entry-content .better-business-hours ol.better-business-hours-listing li .better-business-hours-listing-day,
+    .entry-content .better-business-hours ol.better-business-hours-listing li .better-business-hours-listing-time-blocks {
+      display: table-cell;
+      padding: 0.25em 0; }
+    /* line 24, ../sass/bbh.scss */
+    .better-business-hours ol.better-business-hours-listing li .better-business-hours-listing-day,
+    .entry-content .better-business-hours ol.better-business-hours-listing li .better-business-hours-listing-day {
+      font-weight: bold;
+      padding-right: 1em; }
+  /* line 29, ../sass/bbh.scss */
+  .better-business-hours ol.better-business-hours-listing .better-business-hours-listing-time-block,
+  .entry-content .better-business-hours ol.better-business-hours-listing .better-business-hours-listing-time-block {
+    display: block;
+    margin-bottom: 0.25em; }
+/* line 34, ../sass/bbh.scss */
+.better-business-hours .better-business-hours-is-open,
+.entry-content .better-business-hours .better-business-hours-is-open {
+  margin-bottom: 0.5em; }
+  /* line 36, ../sass/bbh.scss */
+  .better-business-hours .better-business-hours-is-open strong,
+  .entry-content .better-business-hours .better-business-hours-is-open strong {
+    font-weight: bold; }
+/* line 40, ../sass/bbh.scss */
+.better-business-hours .better-business-hours-timezone-info,
+.entry-content .better-business-hours .better-business-hours-timezone-info {
+  font-size: 0.8em;
+  line-height: 1.4;
+  margin-bottom: 0.5em; }

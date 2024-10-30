@@ -1,0 +1,59 @@
+# Copyright (C) 2017 TylerDigital
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Better Business Hours 1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/better-business-hours\n"
+"POT-Creation-Date: 2017-05-26 02:34:36+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n1.0.0\n"
+
+#: better-business-hours.php:301 release/1.0.0/better-business-hours.php:301
+#: release/svn/better-business-hours.php:301
+msgid ""
+"Better Business Hours is missing requirements and has been <a "
+"href=\"%s\">deactivated</a>. Please make sure all requirements are "
+"available."
+msgstr ""
+
+#: includes/class-widget.php:54 release/1.0.0/includes/class-widget.php:54
+#: release/svn/includes/class-widget.php:54
+msgid "Business Hours"
+msgstr ""
+
+#: includes/class-widget.php:55 release/1.0.0/includes/class-widget.php:55
+#: release/svn/includes/class-widget.php:55
+msgid "Business"
+msgstr ""
+
+#: includes/class-widget.php:62 release/1.0.0/includes/class-widget.php:62
+#: release/svn/includes/class-widget.php:62
+msgid "A widget boilerplate description."
+msgstr ""
+
+#: includes/class-widget.php:190 release/1.0.0/includes/class-widget.php:190
+#: release/svn/includes/class-widget.php:190
+msgid "Title:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Better Business Hours"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Easily set and display your business hours"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "TylerDigital"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://tylerdigital.com"
+msgstr ""

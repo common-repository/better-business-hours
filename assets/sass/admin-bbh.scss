@@ -1,0 +1,125 @@
+@import 'compass';
+
+/* Availability Table ------------------------ */
+
+table.availability {
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+	display: table;
+	max-width: 42rem;
+	width: 100%;
+	th,
+	td {
+		border: none;
+		display: table-cell;
+		padding: 0.25rem;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+	thead {
+		border-bottom: 1px solid #d0d0d0;
+		th {
+			text-align: center;
+			width: 12%;
+			&:first-of-type {
+				width: 16%;
+			}
+		}
+	}
+	& > thead > tr {
+		border-bottom: 1px solid #d0d0d0;
+	}
+	& > tbody > tr {
+		border-bottom: 1px solid #d0d0d0;
+		&:nth-child(odd) {
+			border-bottom-style: dashed;
+		}
+	}
+	td {
+		background: white;
+		border-left: 1px solid #d0d0d0;
+		cursor: url(../images/pencil.png), cell;
+		&.selected {
+			background: #8BC34A;
+			cursor: url(../images/eraser.png), not-allowed;
+		}
+		&.highlight {
+			background: pink;
+		}
+	}
+	&.erasing td {
+		cursor: url(../images/eraser.png), not-allowed !important;
+	}
+	&.drawing td.selected {
+		cursor: url(../images/pencil.png), cell !important;
+	}
+}
+
+/* Animation --------------------------------- */
+
+@include keyframes(spin) {
+	from {
+		@include transform(rotate(0deg));
+	}
+	to {
+		@include transform(rotate(-359deg));
+	}
+}
+
+/* Messaging --------------------------------- */
+
+.message {
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: normal !important;
+	line-height: 1;
+	padding: 0 0.5rem;
+	.dashicons {
+		font-size: 0.75rem;
+		height: auto;
+		margin-right: 0.1rem;
+		vertical-align: baseline;
+		width: auto;
+	}
+	&.pending .dashicons {
+		@include animation-name(spin);
+		@include animation-duration(1000ms);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(linear);
+	}
+}
+
+/* Settings ---------------------------------- */
+
+#setting-section-head {
+	cursor: pointer;
+}
+
+.bbh-settings {
+	@include display-flex;
+	@include flex-wrap(wrap);
+}
+
+dl.bbh-setting {
+	margin: 0;
+	padding: 0.5rem 2rem 1rem 0;
+	dt {
+		color: #666;
+		font-size: 0.9rem;
+		font-weight: normal;
+		margin-bottom: 0.25rem;
+	}
+	dd {
+		margin: 0;
+	}
+	select {
+		display: none;
+	}
+	a {
+		font-size: 0.7rem;
+	}
+	.bbh-display-value {
+		font-size: 1.1rem;
+	}
+}
